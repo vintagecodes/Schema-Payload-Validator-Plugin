@@ -1,4 +1,4 @@
-package org.example.demo1;
+package org.validator.schema;
 
 import com.intellij.openapi.actionSystem.AnAction;
 

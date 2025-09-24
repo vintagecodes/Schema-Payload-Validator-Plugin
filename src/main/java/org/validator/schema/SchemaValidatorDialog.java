@@ -1,4 +1,4 @@
-package org.example.demo1;
+package org.validator.schema;
 
 import com.fasterxml.jackson.databind.JsonNode;
 import com.fasterxml.jackson.databind.ObjectMapper;
@@ -41,8 +41,14 @@ public class SchemaValidatorDialog extends DialogWrapper {
         panel.setBorder(BorderFactory.createEmptyBorder(10, 10, 10, 10));
 
         inputArea.setLineWrap(true);
+        inputArea.setText("Paste your JSON with schema and payload here...");
+        inputArea.setBackground(new Color(245, 245, 255)); // Light lavender
+        inputArea.setForeground(new Color(50, 50, 50)); // Dark gray
         outputArea.setLineWrap(true);
+        outputArea.setText("Output will be displayed here...");
         outputArea.setEditable(false);
+        outputArea.setBackground(new Color(230, 255, 240)); // Light mint green
+        outputArea.setForeground(new Color(50, 50, 50)); // Dark gray
 
         JBScrollPane inputScroll = new JBScrollPane(inputArea);
         JBScrollPane outputScroll = new JBScrollPane(outputArea);
